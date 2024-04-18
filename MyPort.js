@@ -82,6 +82,8 @@ $(document).ready(function () {
     });
   });
 
+//my projects more details
+
   $(".more-about-gen-asset").click(function () {
     alert('ask the creator');
   });
@@ -112,6 +114,13 @@ $(document).ready(function () {
 
 
   document.getElementById('download-cv').addEventListener('click', function() {
+    var downloadLink = document.createElement('a');
+    downloadLink.href = 'file/Fred_CV.pdf';
+    downloadLink.download = 'Fred_CV.pdf';
+    downloadLink.click();
+  });
+
+  document.getElementById('download-cv-me').addEventListener('click', function() {
     var downloadLink = document.createElement('a');
     downloadLink.href = 'file/Fred_CV.pdf';
     downloadLink.download = 'Fred_CV.pdf';
