@@ -40,7 +40,8 @@ $(document).ready(function () {
   
     var typed = new Typed(".typing", {
       strings: [
-        "Fullstack Developer",
+        ".Net Developer",
+        "Web Developer",
       ],
       typeSpeed: 100,
       backSpeed: 60,
@@ -49,7 +50,7 @@ $(document).ready(function () {
   
     var typed = new Typed(".typing-2", {
       strings: [
-        "Fullstack Developer",
+        "Web Developer",
       ],
       typeSpeed: 100,
       backSpeed: 60,
@@ -79,4 +80,40 @@ $(document).ready(function () {
         }
       }
     });
+  });
+
+  $(".more-about-gen-asset").click(function () {
+    alert('ask the creator');
+  });
+
+  $(".more-about-port").click(function () {
+    window.location.href = "https://fredc01.github.io/flc/";
+  });
+
+  $(".more-about-row").click(function () {
+    alert('ask the creator');
+  });
+
+  $(".more-about-proj-exp").click(function () {
+    alert('ask the creator');
+  });
+
+  $(".more-about-lease-exp").click(function () {
+    alert('ask the creator');
+  });
+
+  $(".more-about-org-view").click(function () {
+    alert('ask the creator');
+  });
+
+  $(".more-about-tube-color").click(function () {
+    alert('ask the creator');
+  });
+
+
+  document.getElementById('download-cv').addEventListener('click', function() {
+    var downloadLink = document.createElement('a');
+    downloadLink.href = 'file/Fred_CV.pdf';
+    downloadLink.download = 'Fred_CV.pdf';
+    downloadLink.click();
   });
